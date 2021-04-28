@@ -22,15 +22,57 @@
 </head>
 
 <body>
+
+  <div class="mobile-menu">
+    <div class="mobile">
+        <a href="#" class="link1" onclick="myFunction()">Product <img src="/images/icon-arrow-dark.svg" alt="arrow"
+        /></a>
+        <div class="list1" id="myDropdown">
+          <a href="#">Overview</a>
+          <a href="#">Pricing</a>
+          <a href="#">Marketplace</a>
+          <a href="#">Features</a>
+          <a href="#">Integrations</a>
+        </div>
+      
+        <a href="#" class="link1" onclick="myFunction1()">Company
+          <img src="/images/icon-arrow-dark.svg" alt="arrow" />
+        </a>
+        <div class="list2" id="myDropdown">
+          <a href="#">About</a>
+          <a href="#">Team</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+      
+      
+        <a href="#" class="link1" onclick="myFunction2()">Connect
+          <img src="/images/icon-arrow-dark.svg" alt="arrow" />
+        </a>
+        <div class="list3" id="myDropdown">
+          <a href="#">Contact</a>
+          <a href="#">Newsletter</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      
+    </div>
+
+    <div class="button-line"></div>
+    <div class="mobile-buttons">
+      <a href="#" class="btn login">Login</a>
+      <a href="#" class="btn signUp">Sign Up</a>
+    </div>
+  </div>
+
+  <!-- Header Section -->
   <header id="page-header">
     <div id="image-overlay"></div>
 
-    <nav class="navbar navbar-expand-md navbar-light py-3">
+    <nav class="navbar navbar-expand-md">
+       <div class="container">
       <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="Blogr Logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
+  
+  
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
 
@@ -78,12 +120,15 @@
           <button class="btn btn-2 my-2 my-sm-0" type="submit">Sign Up</button>
         </form>
       </div>
+      </div>
     </nav>
 
-   
+    <div class="hamburger" onclick="clickHamburger()"></div>
   
   </header>
 
+
+  <!-- Page's Introductory message -->
   <section id="header-info">
     
     <h1 > A modern publishing platform</h1>
@@ -97,9 +142,10 @@
 
   </section>
 
+  <!-- This section describes the features of Blogr -->
   <section id="design-section">
     <h2> Designed for the future</h2>
-
+<div class="design">
     <article>
       <h3> Introducing an extensible editor</h3>
       <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
@@ -115,10 +161,11 @@
     <aside>
       <img src="./images/illustration-editor-desktop.svg" alt="Desktop Editor Image">
     </aside>
+  </div>
   </section>
 
 
-
+<!-- Blogr Art Section -->
   <section id="art-section">
     <div>
     <img src="./images/illustration-phones.svg" alt="Illustration Phones">
@@ -132,7 +179,7 @@
   </section>
 
 
-
+<!-- This section contains the benefits of using Blogr -->
   <section id="laptop-section">
     <div>
     <img src="./images/illustration-laptop-desktop.svg" alt="Illustration Laptop">
@@ -151,6 +198,8 @@
     </aside>
   </section>
 
+
+  <!-- Footer Section -->
   <section id="final-section">
     <nav id="second-nav">
       <div class="final-section-tag">
@@ -219,12 +268,11 @@
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Adedamola Shittu</a>.
     </div>
   </section>
 
-
- 
+<script src="main.js"></script>
 </body>
 
 </html>
